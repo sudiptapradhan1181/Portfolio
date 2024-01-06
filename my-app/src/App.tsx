@@ -1,24 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TaskManager from './components/TaskManager';
 
 function App() {
+
+  // let userNames: string[];
+  // let tupleName: [string, number][]
+  // let userAge: (string | number)[]
+
+  // userAge = [1, "One"]
+
+  // userNames = ["A", "B"]
+
+  // tupleName = [["Sudo", 5], ["Mike", 12]]
+
+
+  // //void returns undefined, never doesnt return anything.
+  // let printName: (name: string) => never
+  
+  // //Alias
+  // type Person = {
+  //   name: string,
+  //   age?: number
+  // }
+
+  // interface Details extends Person {
+  //   profession: string,
+  //   experience: number
+  // }
+
+  // let people: Person
+
+  // people = {
+  //   name: "Sudipta"
+  // }
+
+  // let candidate: Details
+  // candidate = {
+  //   name: "Sudipta",
+  //   profession: "SDE 2",
+  //   experience: 2.5
+  // }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TaskManager />
     </div>
   );
 }
